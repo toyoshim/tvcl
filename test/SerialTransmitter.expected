@@ -1,0 +1,4 @@
+VCD info: dumpfile SerialTransmitter.vcd opened for output.
+receive: $de
+receive: $ad
+transmit: unexpected request on a busy cycle

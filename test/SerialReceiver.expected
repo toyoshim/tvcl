@@ -1,0 +1,5 @@
+receive: $4d
+receive: $aa
+receive: can not detect stop bit
+receive: $55
+receive: $55

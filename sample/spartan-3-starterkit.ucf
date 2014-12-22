@@ -1,0 +1,150 @@
+# Copyright (c) 2014 Takashi Toyoshima <toyoshim@gmail.com>.
+# All rights reserved.  Use of this source code is governed by a BSD-style
+# license that can be found in the LICENSE file.
+
+#
+# Clock Sources
+# 
+NET "CLK50MHZ" LOC = "T9";
+NET "SOCKET" LOC = "D9";
+
+#
+# Fast, Asynchronous SRAM
+#
+NET "SRAM_A<0>" LOC = "L5";
+NET "SRAM_A<1>" LOC = "N3";
+NET "SRAM_A<2>" LOC = "M4";
+NET "SRAM_A<3>" LOC = "M3";
+NET "SRAM_A<4>" LOC = "L4";
+NET "SRAM_A<5>" LOC = "G4";
+NET "SRAM_A<6>" LOC = "F3";
+NET "SRAM_A<7>" LOC = "F4";
+NET "SRAM_A<8>" LOC = "E3";
+NET "SRAM_A<9>" LOC = "E4";
+NET "SRAM_A<10>" LOC = "G5";
+NET "SRAM_A<11>" LOC = "H3";
+NET "SRAM_A<12>" LOC = "H4";
+NET "SRAM_A<13>" LOC = "J4";
+NET "SRAM_A<14>" LOC = "J3";
+NET "SRAM_A<15>" LOC = "K3";
+NET "SRAM_A<16>" LOC = "K5";
+NET "SRAM_A<17>" LOC = "L3";
+NET "SRAM_WE_X" LOC = "G3";
+NET "SRAM_OE_X" LOC = "K4";
+NET "SRAM_IO_A<0>" LOC = "N7";
+NET "SRAM_IO_A<1>" LOC = "T8";
+NET "SRAM_IO_A<2>" LOC = "R6";
+NET "SRAM_IO_A<3>" LOC = "T5";
+NET "SRAM_IO_A<4>" LOC = "R5";
+NET "SRAM_IO_A<5>" LOC = "C2";
+NET "SRAM_IO_A<6>" LOC = "C1";
+NET "SRAM_IO_A<7>" LOC = "B1";
+NET "SRAM_IO_A<8>" LOC = "D3";
+NET "SRAM_IO_A<9>" LOC = "P8";
+NET "SRAM_IO_A<10>" LOC = "F2";
+NET "SRAM_IO_A<11>" LOC = "H1";
+NET "SRAM_IO_A<12>" LOC = "J2";
+NET "SRAM_IO_A<13>" LOC = "L2";
+NET "SRAM_IO_A<14>" LOC = "P1";
+NET "SRAM_IO_A<15>" LOC = "R1";
+NET "SRAM_CE_A_X" LOC = "P7";
+NET "SRAM_LB_A_X" LOC = "P6";
+NET "SRAM_UB_A_X" LOC = "T4";
+NET "SRAM_IO_B<0>" LOC = "P2";
+NET "SRAM_IO_B<1>" LOC = "N2";
+NET "SRAM_IO_B<2>" LOC = "M2";
+NET "SRAM_IO_B<3>" LOC = "K1";
+NET "SRAM_IO_B<4>" LOC = "J1";
+NET "SRAM_IO_B<5>" LOC = "G2";
+NET "SRAM_IO_B<6>" LOC = "E1";
+NET "SRAM_IO_B<7>" LOC = "D1";
+NET "SRAM_IO_B<8>" LOC = "D2";
+NET "SRAM_IO_B<9>" LOC = "E2";
+NET "SRAM_IO_B<10>" LOC = "G1";
+NET "SRAM_IO_B<11>" LOC = "F5";
+NET "SRAM_IO_B<12>" LOC = "C3";
+NET "SRAM_IO_B<13>" LOC = "K2";
+NET "SRAM_IO_B<14>" LOC = "M1";
+NET "SRAM_IO_B<15>" LOC = "N1";
+NET "SRAM_CE_B_X" LOC = "N5";
+NET "SRAM_LB_B_X" LOC = "P5";
+NET "SRAM_UB_B_X" LOC = "R4";
+
+#
+# Four-Digit, Seven-Segment LED Display
+#
+NET "LED_AN<0>" LOC = "D14";
+NET "LED_AN<1>" LOC = "G14";
+NET "LED_AN<2>" LOC = "F14";
+NET "LED_AN<3>" LOC = "E13";
+NET "LED_A" LOC = "E14";
+NET "LED_B" LOC = "G13";
+NET "LED_C" LOC = "N15";
+NET "LED_D" LOC = "P15";
+NET "LED_E" LOC = "R16";
+NET "LED_F" LOC = "F13";
+NET "LED_G" LOC = "N16";
+NET "LED_DP" LOC = "P16";
+
+#
+# Switch
+#
+NET "SW<0>" LOC = "F12";
+NET "SW<1>" LOC = "G12";
+NET "SW<2>" LOC = "H14";
+NET "SW<3>" LOC = "H13";
+NET "SW<4>" LOC = "J14";
+NET "SW<5>" LOC = "J13";
+NET "SW<6>" LOC = "K14";
+NET "SW<7>" LOC = "K13";
+
+#
+# Button
+#
+NET "BTN<0>" LOC = "M13";
+NET "BTN<1>" LOC = "M14";
+NET "BTN<2>" LOC = "L13";
+NET "BTN<3>" LOC = "L14";
+
+#
+# LED
+#
+NET "LD<0>" LOC = "K12";
+NET "LD<1>" LOC = "P14";
+NET "LD<2>" LOC = "L12";
+NET "LD<3>" LOC = "N14";
+NET "LD<4>" LOC = "P13";
+NET "LD<5>" LOC = "N12";
+NET "LD<6>" LOC = "P12";
+NET "LD<7>" LOC = "P11";
+
+#
+# VGA Port
+#
+NET "VGA_R" LOC = "R12";
+NET "VGA_G" LOC = "T12";
+NET "VGA_B" LOC = "R11";
+NET "VGA_HS" LOC = "R9";
+NET "VGA_VS" LOC = "T10";
+
+#
+# PS2
+#
+NET "PS2C" LOC = "M16";
+NET "PS2D" LOC = "M15";
+
+#
+# RS-232 Serial Port
+#
+NET "RXD" LOC = "T13";
+NET "TXD" LOC = "R13";
+NET "RXDA" LOC = "N10";
+NET "TXDA" LOC = "T14";
+
+#
+# Platform Flash (XCF02S Serial PROM)
+#
+NET "DIN" LOC = "M11";
+NET "INIT_B" LOC = "N9";
+NET "RCLK" LOC = "A14";
+
