@@ -10,6 +10,7 @@ module RAM(
     i_write_x,
     i_data,
     o_data);
+  parameter delay = 10;
   parameter depth = 16;
   parameter width = 8;
   input  [depth - 1:0] i_addr;
@@ -21,14 +22,24 @@ module RAM(
 
   reg    [width - 1:0] r_ram[0:2**depth];
 
-  always @ (i_addr or i_enable_x or i_write_x or i_data) begin
-    if (i_enable_x) #10 begin
+  reg    [depth - 1:0] r_addr;
+  reg                  r_enable_x;
+  reg                  r_write_x;
+  reg    [width - 1:0] r_data;
+
+  always r_addr     = #delay i_addr;
+  always r_enable_x = #delay i_enable_x;
+  always r_write_x  = #delay i_write_x;
+  always r_data     = #delay i_data;
+
+  always @ (r_addr or r_enable_x or r_write_x or r_data) begin
+    if (r_enable_x) begin
       o_data <= {width{1'bz}};
-    end else if (i_write_x) #10 begin
-      o_data <= r_ram[i_addr];
-    end else #10 begin
+    end else if (r_write_x) begin
+      o_data <= r_ram[r_addr];
+    end else begin
       o_data <= {width{1'bx}};
-      r_ram[i_addr] <= i_data;
+      r_ram[r_addr] <= r_data;
     end
   end
 endmodule  // module RAM
